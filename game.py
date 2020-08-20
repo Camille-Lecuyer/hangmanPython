@@ -33,7 +33,7 @@ def play(word):
                wordAsList[index] = guess
             wordCompletion = "".join(wordAsList)
             if "_" not in wordCompletion:
-               guessed = true
+               guessed = True
       elif len(guess) == len(word) and guess.isalpha():
          if guess in guessedWords:
             print("You already guess the word", guess) 
@@ -42,7 +42,7 @@ def play(word):
             tries -= 1
             guessedWords.append(guess)
          else:
-            guessed= true
+            guessed= True
             wordCompletion = word
       print(display_hangman(tries))
       print(wordCompletion)
